@@ -1,18 +1,23 @@
-.coursesbackgroud {
-  background-color: #f2f3f7;
-  padding-top: 30px;
+.courses-list {
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
-.loadmorebtn {
+.load-more-btn {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 79px;
   border-radius: 6px;
   background-color: white;
   border: none;
-  box-shadow: 0px 0px 31px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 24px 0 rgba(18, 21, 35, 0.08);
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.19px;
+  text-align: center;
+  color: #577ce6;
+  text-decoration: underline;
 }
 
-.loadmorebtn::content {
+.load-more-btn::content {
   padding: 10px;
 }

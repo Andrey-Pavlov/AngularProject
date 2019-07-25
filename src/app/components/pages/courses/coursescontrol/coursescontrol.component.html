@@ -1,7 +1,24 @@
-<div>
+<div class="course-control">
   <div>
-    <span><input type="text" placeholder="type to search"/></span
-    ><span><button type="button">Search</button></span>
+    <input
+      type="text"
+      placeholder="type to search"
+      class="course-control__search-field"
+      [(ngModel)]="searchedCourse"
+    />
+    <button
+      type="button"
+      class="course-control__search-button"
+      (click)="searchCourse()"
+    >
+      Search
+    </button>
   </div>
-  <div class="addcourse"><button type="button">Add course</button></div>
+  <div class="course-control__add-button-container">
+    <button class="course-control__add-button" type="button">
+      <div class="course-control__add-button-plus"></div>
+      <div class="course-control__add-button-plus--horizontal"></div>
+      Add course
+    </button>
+  </div>
 </div>

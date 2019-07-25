@@ -1,7 +1,11 @@
-<div class="coursesbackgroud">
-  <div class="wrapper">
-    <app-coursescontrol></app-coursescontrol>
-    <app-course *ngFor="let course of courses" [course]="course"> </app-course>
-    <button type="button" class="loadmorebtn">Load more</button>
-  </div>
+<div class="courses-list">
+  <app-coursescontrol></app-coursescontrol>
+  <app-course
+    *ngFor="let course of courses"
+    [course]="course"
+    (deleted)="onDeleted($event)"
+  ></app-course>
+  <button type="button" class="load-more-btn" (click)="loadmore()">
+    LOAD MORE
+  </button>
 </div>

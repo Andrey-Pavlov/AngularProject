@@ -1,11 +1,52 @@
 .card {
-  border-radius: 6px;
+  border-radius: 0.5rem;
   background-color: white;
-  box-shadow: 0px 0px 31px -12px rgba(0, 0, 0, 0.75);
-  padding: 30px;
-  margin-bottom: 30px;
+  box-shadow: 0 1px 24px 0 rgba(18, 21, 35, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.875rem;
+}
+.card__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.delpadding {
-  padding-left: 25px;
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #2c2f3c;
+}
+
+.card__time-info {
+  color: #b9bdce;
+  margin-right: 285px;
+}
+
+.card__content {
+  margin-top: 0.5rem;
+  margin-right: 5.5rem;
+  line-height: 1.71rem;
+  color: #525462;
+}
+
+.font-icon-padding {
+  padding-right: 8px;
+  padding-left: 16px;
+}
+
+.card__button {
+  background-color: #30b6dd;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 18px 5px 0;
+  display: flex;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card__button--del {
+  margin-left: 12px;
 }

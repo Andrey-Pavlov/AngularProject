@@ -1,8 +1,48 @@
 .header {
-  background-color: #2b2b30;
+  background-color: #414452;
+  padding-left: 85px;
+  padding-right: 39px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
 }
 
-.header app-logo {
-  padding: 20px;
+.header__logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.header__log-items {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.875rem;
   color: #ffffff;
+}
+
+.header__log-items--icon-space {
+  padding-left: 9px;
+}
+
+.header__log-items--logoff {
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+}
+
+.user-icon {
+  background: url("../../../../assets/ic-user.svg");
+  height: 12px;
+  width: 10px;
+}
+
+.exit-icon {
+  background: url("../../../../assets/ic-exit.svg");
+  height: 12px;
+  width: 16px;
 }

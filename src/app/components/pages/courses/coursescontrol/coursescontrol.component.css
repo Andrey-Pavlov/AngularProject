@@ -1,3 +1,72 @@
-.addcourse {
-  text-align: right;
+.course-control {
+  padding: 1.5rem 0 0.75rem;
+}
+
+.course-control__search-field {
+  width: 22.5rem;
+  height: 3rem;
+  border-radius: 3px;
+  border: solid 1px #d9dbe3;
+  background-color: #ffffff;
+  background-image: url(../../../../../assets//ic-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0.75rem center;
+  padding: 0 0 0 42px;
+}
+
+.course-control__search-field::placeholder {
+  font-size: 0.875rem;
+  letter-spacing: 0.22px;
+  color: #c0c3ce;
+}
+
+.course-control__search-button {
+  border: none;
+  background-color: transparent;
+  margin-left: 6px;
+  width: 6.25rem;
+  height: 3rem;
+  border-radius: 3px;
+  background-color: #9bc837;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+}
+
+.course-control__add-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.course-control__add-button {
+  border-radius: 3px;
+  background-color: #30b6dd;
+  border: none;
+  color: white;
+  height: 2.25rem;
+  width: 138px;
+  padding-left: 1.125rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.course-control__add-button-plus {
+  width: 0.125rem;
+  height: 1rem;
+  border-radius: 1px;
+  background-color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.course-control__add-button-plus--horizontal {
+  width: 0.125rem;
+  height: 1rem;
+  border-radius: 1px;
+  background-color: #ffffff;
+  transform: rotate(180deg);
+  position: relative;
+  left: -0.5rem;
 }

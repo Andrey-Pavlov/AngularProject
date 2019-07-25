@@ -1,17 +1,38 @@
 <div class="card">
-  <h1>{{ course.title }}</h1>
-  <p>
-    {{
-      course.creationDate
-        .toISOString()
-        .slice(0, 19)
-        .replace("T", " ")
-    }}
-  </p>
-  <p>{{ course.duration }} mins</p>
-  <p>{{ course.description }}</p>
-  <div>
-    <span><button type="button">Edit</button></span>
-    <span class="delpadding"><button type="button">Delete</button></span>
+  <div class="card__row">
+    <div class="card__title">{{ course.title }}</div>
+    <div class="card__row card__time-info">
+      <div>
+        <fa-icon [icon]="['far', 'clock']" class="font-icon-padding"></fa-icon>
+        {{ course.duration | duration }}
+      </div>
+      <div>
+        <fa-icon
+          [icon]="['fas', 'calendar-alt']"
+          class="font-icon-padding"
+        ></fa-icon>
+        {{ course.creationDate | date: "d MMM, y" }}
+      </div>
+    </div>
+  </div>
+  <div class="card__row">
+    <div class="card__content">{{ course.description }}</div>
+    <div class="card__row">
+      <button type="button" class="card__button">
+        <fa-icon
+          [icon]="['fas', 'pencil-alt']"
+          class="font-icon-padding"
+        ></fa-icon>
+        Edit
+      </button>
+      <button
+        type="button"
+        class="card__button card__button--del"
+        (click)="delete(course.id)"
+      >
+        <fa-icon [icon]="['fas', 'trash']" class="font-icon-padding"></fa-icon>
+        Delete
+      </button>
+    </div>
   </div>
 </div>

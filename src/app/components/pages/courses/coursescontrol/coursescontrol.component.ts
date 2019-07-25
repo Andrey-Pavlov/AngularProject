@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-coursescontrol',
-  templateUrl: './coursescontrol.component.html',
-  styleUrls: ['./coursescontrol.component.css']
+  selector: "app-coursescontrol",
+  templateUrl: "./coursescontrol.component.html",
+  styleUrls: ["./coursescontrol.component.css"]
 })
 export class CoursescontrolComponent implements OnInit {
+  @Input() searchedCourse: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  searchCourse = () => {
+    console.log(this.searchedCourse);
+  };
 }
